@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>ErfanGSI</title>
+      <link rel="stylesheet" href="https://demos.jquerymobile.com/1.4.5/css/themes/default/jquery.mobile-1.4.5.min.css">
+      <link rel="stylesheet" href="https://demos.jquerymobile.com/1.4.5/_assets/css/jqm-demos.css">
+      <link rel="shortcut icon" href="https://demos.jquerymobile.com/1.4.5/favicon.ico">
+      <script src="https://demos.jquerymobile.com/1.4.5/js/jquery.js"></script>
+	  <link rel="stylesheet" href="../css/shiv.min.css">
+      <script src="https://demos.jquerymobile.com/1.4.5/_assets/js/index.js"></script>
+      <script src="https://demos.jquerymobile.com/1.4.5/js/jquery.mobile-1.4.5.min.js"></script>
+	   <meta name="theme-color" content="#20203c">
+
+   </head>
+   <body class="ui-page-theme-a">
+      <div data-role="page" class="ui-body-a">
+         <div data-role="header">
+            <a href="../" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l" data-direction="reverse" data-transition="slide">Back</a>
+            <h1>ErfanGSIs</h1>
+         </div>
+         <div role="main" class="ui-content">
+            <p>These are the basic instructions for flashing an  erfanGSI with a TWRP. All the erfanGSIs are compressed in a .7zip file, you need to extract the .IMG file from it using tool such as WinRAR on PC or Zarchiver on Android device.If you don't know how to flash a GSI in system partition ,then please <a href="https://www.xda-developers.com/flash-generic-system-image-project-treble-device" target="_blank">read this article on XDA</a> and check the "Flashing through TWRP" section.
+               <br/>
+               <br/>
+               <b>Note - Always install google play services apk after booting, check <a href="../GSI/downloads.html">download section </a>for more information</b>
+           <br/>
+               <br/>
+<b><h2 align="center">Permissiver & Zygote Fix are not needed on any GSI which is built after 25th September. If you flashing any GSI which is built before this date then you have to use permissiver & Zygote Fix (For Android 10 - Aonly devices). AB devices never needs zygote fix.</h2></b>
+           </p>
+            <br/>
+            <div data-role="collapsible" data-theme="a" data-content-theme="a">
+               <h4>on A-Only devices</h4>
+               <ol data-role="listview">
+                  <p><b>For Pie GSIs by Erfan</b></p>
+                  <li>Wipe Data/System</li>
+                  <li>Flash a treble ROM</li>
+                  <li>Flash the IMG in system partition</li>
+                  <li>Flashing Magisk is optional</li>
+                  <li>Reboot</li>
+               </ol>
+               </br>
+               <p><b>For Q/Android 10 GSIs by Erfan</b></p>
+               <ol data-role="listview">
+                  <li>Wipe Data/System</li>
+                  <li>Flash a treble ROM</li>
+                  <li>Flash the IMG in system partition</li>
+                  <li>Flashing Magisk is optional</li>
+                  <li>Reboot</li>
+               </ol>
+            </div>
+            <div data-role="collapsible" data-theme="a" data-content-theme="a">
+               <h4>on AB devices</h4>
+               <ol data-role="listview">
+                  <p><b>For Pie GSIs by Erfan</b></p>
+                  <li>Wipe Data/System</li>
+                  <li>Flash a treble ROM</li>
+                  <li>Flash the IMG in system partition</li>
+                  <li>Flashing Magisk is optional</li>
+                  <li>Reboot</li>
+               </ol>
+               </br>
+               <p><b>For Flashing Q/Android 10 GSIs on AB devices - The instructions are same as flashing Pie GSI , you don't need Zygote fix for AB devices.</b></p>
+            </div>
+            <div data-role="collapsible" data-theme="a" data-content-theme="a">
+               <h4>Error Flashing Zips</h4>
+               <p>There are some errors which users get while flashing GSIs and Zips - So what are they ? <br/><br/>
+                  <b>1. File is larger than target device </b>- This means the size of device's system partition is lesser than the GSI image which are you trying to flash. In simple words this means you can't fit a pumpking in your coffee mug. <br/><br/>
+                  In this case the solution is resizing your system partition which can be dangerous if the institution not followed properly. It can damage your system and brick your phone. This is not suggested for people who don't know what they are going to do. Do not do thing on Moto devices. 
+                  Here is link for a repartitioning a device - <a href="http://oxygenosguide.lunarixus.party" target="_blank">Resize System</a>
+               </p>
+               <br/>
+               <p><b>2. Error when flashing permissiver</b>- You can get errors sometimes when flashing permissiver which are related to ramdisk. The basic solution which I know is - Use Permissiver v4 first, if it gives error then try flashing permissiver v5. If v5 also gives errors then flash Magisk and try flashing permissiver V5 or V4 again. It can solve the issue sometimes if flashed after Magisk but is not guaranteed to work every time. </p>
+            </div>
+         </div>
+         <!-- /content -->
+         <div data-role="footer">
+                 <h4><a href="https://t.me/shivvvvvv" target="_blank" style="text-decoration:none">©Shiv</a></h4>
+         </div>
+         <!-- /footer -->
+      </div>
+      <!-- /page -->
+   </body>
+</html>

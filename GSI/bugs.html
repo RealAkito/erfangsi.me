@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>ErfanGSI</title>
+      <link rel="stylesheet" href="https://demos.jquerymobile.com/1.4.5/css/themes/default/jquery.mobile-1.4.5.min.css">
+      <link rel="stylesheet" href="https://demos.jquerymobile.com/1.4.5/_assets/css/jqm-demos.css">
+      <link rel="shortcut icon" href="https://demos.jquerymobile.com/1.4.5/favicon.ico">
+      <script src="https://demos.jquerymobile.com/1.4.5/js/jquery.js"></script>
+      <link rel="stylesheet" href="../css/shiv.min.css">
+      <script src="https://demos.jquerymobile.com/1.4.5/_assets/js/index.js"></script>
+      <script src="https://demos.jquerymobile.com/1.4.5/js/jquery.mobile-1.4.5.min.js"></script>
+      <meta name="theme-color" content="#20203c">
+   </head>
+   <body class="ui-page-theme-a">
+      <div data-role="page" class="ui-body-a">
+         <div data-role="header">
+            <a href="../" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l" data-direction="reverse" data-transition="slide">Back</a>
+            <h1>ErfanGSIs</h1>
+         </div>
+         <div role="main" class="ui-content">
+            <p>The common thing about OEM GSIs is that there will always be buggy at some point. How much buggy a GSI will be depends on two things .First is vendor of your device and second is the GSI itself. All vendors are not perfect, you have treble support doesn't mean you will be able to boot all the GSIs. <br/><br/>
+               There are cases when the system i.e the GSI requires some particular type of libs and files but your vendor doesn't have them, in this case there will be bugs and absense of these particular libs/files in vendor can stop you from booting the GSIs as well as cause bugs.<br/><br/>
+               So what to do if it doesn't boot on your device ? The answer is , take proper logs and submit them on github issues section of ErfanGSIs. <br/><br/>
+               It is very ridiculous and stupid to say that "Its not booting on my device" in the support group without providing logs and details about your device. Before you think to report issues the one more thing you can do is to search about the issue you are facing in the ErfanGSIs group. Someone might have already reported it. You can search with your device name to see if any GSI booted or not booting on your phone. 
+            </p>
+            <div data-role="collapsible" data-theme="a" data-content-theme="a">
+               <h4>Taking Logs </h4>
+               <p>
+                  There are two ways to grab to log - 
+                    <br/><br/>
+                  <b>1.Using TWRP - Simple & Easy  </b> All erfanGSI includes a logging service which automatically take logs and stores them in /data/local/tmp/logs foder with a file named <i>log</i>. If any GSIs is not booting for you then you copy the log file and provide it with a bug report on github.
+                  <br/><br/>
+                  <b>2. Taking logs with adb -  </b>The full tutorial is here on <a href="https://www.xda-developers.com/how-to-take-logs-in-android/">XDA Website </a>. <br/>
+                  If you get unrecogned device error when using adb then use this command - <br/>
+                  Linux/Mac - <i>adb push ~/.android/adbkey.pub /data/misc/adb/adb_keys</i><br/>
+                  On Windows - 
+                  <i>
+                     adb push C:\Users\<userName>\.android\adbkey.pub /data/misc/adb/adb_keys
+                  </i>
+               </p>
+            </div>
+            <div data-role="collapsible" data-theme="a" data-content-theme="a">
+               <h4>Submit Logs </h4>
+               <p>
+                  If you want to get support quickly then its highly recommended to open an issue on github with logs , you can send logs in the erfanGSIs group also but do it properly. Logs sent in group might not be read by erfan or any other dev because there are chances that they won't notice them in group. <br/>
+                   <a href="https://github.com/erfanoabdi/ErfanGSIs/issues/new?assignees=&labels=&template=bug_report.md&title=%3CAndroid+version%3E+%3CDevice+code+name%3E+%5BBug+name+Ex.+Bootloop+on+animation%5D" target="_blank" class="ui-btn ui-icon-carat-r ui-btn-icon-left ui-btn ui-btn-inline ui-corner-all">Submit Bug Report On Github</a>
+               </p>
+            </div>
+         </div>
+         <!-- /content -->
+         <div data-role="footer">
+                 <h4><a href="https://t.me/shivvvvvv" target="_blank" style="text-decoration:none">©Shiv</a></h4>
+         </div>
+         <!-- /footer -->
+      </div>
+      <!-- /page -->
+   </body>
+</html>
+

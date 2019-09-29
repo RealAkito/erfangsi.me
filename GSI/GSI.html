@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>ErfanGSI</title>
+      <link rel="stylesheet" href="https://demos.jquerymobile.com/1.4.5/css/themes/default/jquery.mobile-1.4.5.min.css">
+      <link rel="stylesheet" href="https://demos.jquerymobile.com/1.4.5/_assets/css/jqm-demos.css">
+      <link rel="shortcut icon" href="https://demos.jquerymobile.com/1.4.5/favicon.ico">
+      <link rel="stylesheet" href="../css/shiv.min.css">
+      <script src="https://demos.jquerymobile.com/1.4.5/js/jquery.js"></script>
+      <script src="https://demos.jquerymobile.com/1.4.5/_assets/js/index.js"></script>
+      <script src="https://demos.jquerymobile.com/1.4.5/js/jquery.mobile-1.4.5.min.js"></script>
+      <meta name="theme-color" content="#20203c">
+   </head>
+   <body class="ui-page-theme-a">
+      <div data-role="page" class="ui-body-a">
+         <div data-role="header">
+            <a href="../" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l" data-direction="reverse" data-transition="slide">Back</a>
+            <h1>ErfanGSIs</h1>
+         </div>
+         <div role="main" class="ui-content">
+            <div data-role="collapsible">
+               <h4>What is a GSI ?</h4>
+               <p>GSI is a generic system image which is basically a file with .img extenstion. It contains all system apps and libs. A GSI doesn't need any kind of zips needs to be flashed after it. If your devices is treble supported all you have to do is flash the system image.</p>
+            </div>
+            <div data-role="collapsible">
+               <h4>What is a semiGSi ?</h4>
+               <p>A semiGSI comes with post Zip files which are flashed after flashing system. In this case system image is not modified (but can be debloated) and the post GSI zips contains files which helps in booting. These post zip files has a zip which patches the ramdisk of boot image which is basically the addition of some ramdisk files from the OEM ROM's boot image.</p>
+            </div>
+            <div data-role="collapsible">
+               <h4>How ErfanGSIs are different from PhhGSIs  ?</h4>
+               <p>Most of the GSIs which erfan provides are ported from closed source OEM systems like OnePlus, MIUI, Zenui etc. They are based on Android but are not open source. These manufacturers modify the AOSP code according to their requirements and add various kind of features and all extra things which are closed source and therefore it makes devs like erfan to solve issue. Thats the reason these GSIs can not be bugfree on every phone out there. In case of PhhGSI , its simply based on pure AOSP and its source codes are open to all. He can do framework level patching if something is broken for a device and that is the reason they are supported on large number of devices with very less bugs.</p>
+            </div>
+         </div>
+         <!-- /content -->
+         <div data-role="footer">
+               <h4><a href="https://t.me/shivvvvvv" target="_blank" style="text-decoration:none">©Shiv</a></h4>
+         </div>
+         <!-- /footer -->
+      </div>
+      <!-- /page -->
+   </body>
+</html>
